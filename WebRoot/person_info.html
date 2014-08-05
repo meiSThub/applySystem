@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <title>轻院报名中心</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <!-- <link href="./css/bootstrap-responsive.css" rel="stylesheet"> -->
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="./js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#"><img src="./img/enroll-system-logo.png" width="204px"></a>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              <li><a href="./index.html">报名进行中</a></li>
+              <li><a href="./index_end.html">报名已截至</a></li>
+              <li><a href="#">全部活动</a></li>
+              <li><a href="#search" role="button" data-toggle="modal">高级查询</a></li>
+              <div class="btn-group">
+                <a href="./person_center.html" class="btn btn-primary" role="button">张三</a>
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="./person_info.html">修改资料</a></li>
+                  <li class="divider"></li>
+                  <li><a tabindex="-1" href="index.html">退出</a></li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <h1>张三
+        <small>
+          <a href="#change-info" class="btn btn-primary btn-large pull-right" role="button" data-toggle="modal">确认修改</a>
+        </small>
+      </h1>
+      <br>
+      <p>国际教育学院</p>
+      <p>电子商务10-03班</p>
+      <input type="text"  placeholder="请输入新的联系电话">
+      <br>
+      <input type="text"  placeholder="请输入新的电子邮箱">
+      <hr>
+      <h3>修改密码
+        <small>
+          <a href="#change-info" class="btn btn-primary btn-large pull-right" role="button" data-toggle="modal">确认修改</a>
+        </small>
+      </h3>
+      <input type="password" placeholder="请输入原密码"><br>
+      <input type="password" placeholder="请输入新密码"><br>
+      <input type="password" placeholder="请再次输入新密码">
+
+
+      <hr>
+
+      <footer>
+        <div class="row">
+          <div class="span3">
+            <h5>相关网站</h5>
+            <p><a href="http://www.zzuli.edu.cn">郑州轻工业学院</a></p>
+            <p><a href="http://my.zzuli.edu.cn/">信息门户</a></p>
+            <p><a href="http://metc.zzuli.edu.cn">现代教育技术中心</a></p>
+          </div>
+          <div class="span3">
+            <h5>校内链接</h5>
+            <p><a href="http://lib.zzuli.edu.cn">图书馆网站</a></p>
+            <p><a href="http://jwc.zzuli.edu.cn">教务处网站</a></p>
+            <p><a href="http://source.zzuli.edu.cn/navigate.aspx">资源门户</a></p>
+            <p><a href="http://gyws.zzuli.edu.cn/">光音网视</a></p>
+          </div>
+          <div class="span3">
+            <h5>系统管理</h5>
+            <a href="./admin.html">管理入口</a>
+          </div>
+          <div class="span3">
+            <h5>联系我们</h5>
+            <p>现代教育技术中心</p>
+            <p>大学生IT创新工作室</p>
+            <p>东风校区：教二楼501</p>
+            <p>科学校区：电教楼522</p>
+            <a href="mailto:itstudiozzuli@gmail.com">发送邮件</a><br>
+          </div>
+        </div>
+      </footer>
+    </div> <!-- /container -->
+
+    <div id="search" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="advanced search" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+        <h3>高级查询</h3>
+      </div>
+      <div class="modal-body">
+        <form>
+          关键字：<input type="text" class="input-large" placeholder="请输入关键字"><br>
+          从&nbsp;<input type="text" class="input-small" placeholder="起始时间">&nbsp;
+          到&nbsp;<input type="text" class="input-small" placeholder="结束时间">&nbsp;
+          主办单位：
+          <select class="span2">
+            <option>教务处</option>
+            <option>图书馆</option>
+            <option>大学生IT创新工作室</option>
+            <option>校团委</option>
+            <option>艺术团</option>
+          </select>
+          <br><br>
+          活动群体：
+          <label class="checkbox inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1">本科生
+          </label>
+          <label class="checkbox inline">
+            <input type="checkbox" id="inlineCheckbox2" value="option2">研究生
+          </label>
+          <label class="checkbox inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3">教职工
+          </label>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" aria-hidden="true" submit="submit">查询</button>
+        </form>
+        <button class="btn" data-dismiss="modal">取消</button>
+      </div>
+    </div>
+
+    <div id="change-info" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="change-info" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+        <h3>修改成功</h3>
+      </div>
+      <div class="modal-body">
+        <p>您的个人信息已经修改成功！</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#" data-dismiss="modal" class="btn btn-primary" role="button" data-toggle="modal">确定</a>
+      </div>
+    </div>
+
+    <div id="enroll" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="enroll" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+        <h3>现在报名</h3>
+      </div>
+      <div class="modal-body">
+        <p>您确定现在报名<strong>美国奥克兰大学物理系教授夏阳教授学术报告</strong>活动么？</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" aria-hidden="true" type="submit">确定</button>
+        <button class="btn" data-dismiss="modal">取消</button>
+      </div>
+    </div>
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+  </body>
+</html>
